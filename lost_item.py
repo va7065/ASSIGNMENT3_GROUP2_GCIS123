@@ -36,7 +36,7 @@ class LostItem:
         if isinstance(other, LostItem):
             return self.__ID == other.__ID
         else:
-            return None
+            return NotImplemented
 
     def mark_claimed(self):
         """Mark this item as claimed once. Return whether it changed."""
